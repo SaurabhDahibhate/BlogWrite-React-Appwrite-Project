@@ -48,11 +48,11 @@ export default function Post() {
             <img
               src={appwriteService.getFilePreview(post.featuredImage)}
               alt={post.title}
-              className="rounded-xl w-2/4 m-5"
+              className="rounded-xl mt-8 w-4/4 sm:w-2/4 xl:w-4/4"
             />
 
             {isAuthor && (
-              <div className="absolute right-6 top-6">
+              <div className="absolute top-0 right-6">
                 <Link to={`/edit-post/${post.$id}`}>
                   <Button bgColor="bg-green-500" className="mr-3">
                     Edit
