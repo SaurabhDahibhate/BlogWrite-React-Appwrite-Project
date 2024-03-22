@@ -98,9 +98,9 @@ export default function PostForm({ post }) {
       </h1>
       <form
         onSubmit={handleSubmit(submit)}
-        className="flex flex-wrap border rounded-xl bg-slate-300 dark:bg-slate-700 border-slate-500 p-5 m-5"
+        className="flex  flex-wrap border rounded-xl bg-slate-300 dark:bg-slate-700 border-slate-500 p-5 m-5"
       >
-        <div className=" w-2/3 px-2">
+        <div className="w-4/4 sm:w-2/3 px-2">
           <Input
             label="Title :"
             placeholder="Title"
@@ -125,7 +125,7 @@ export default function PostForm({ post }) {
             defaultValue={getValues("content")}
           />
         </div>
-        <div className="w-1/3 px-2">
+        <div className="sm:w-1/3 px-2 w-full mt-4 order-1">
           <Input
             label="Featured Image :"
             type="file"

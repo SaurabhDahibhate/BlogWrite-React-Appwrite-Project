@@ -14,9 +14,12 @@ export default function AllPosts() {
 
   return (
     <Container>
-      <div className="flex flex-wrap  ">
+      <div className="flex flex-wrap ">
         {posts.map((post) => (
-          <div key={post.$id} className="p-2 w-1/4 ">
+          <div
+            key={post.$id}
+            className="p-2 w-4/4 sm:w-2/4 xl:w-1/4 sm:space-x-8"
+          >
             <PostCard {...post} />
           </div>
         ))}
