@@ -73,7 +73,11 @@ export default function Post() {
             <p className="text-sm sm:text-sm md:text-lg lg:text-lg space-y-5">
               {parse(post.content, {
                 replace: (domNode) => {
-                  if (domNode.name === "p" || domNode.name === "ul") {
+                  if (
+                    domNode.name === "p" ||
+                    domNode.name === "ul" ||
+                    domNode.name === "li"
+                  ) {
                     // Add margin-bottom to <p> and <li> tags
                     domNode.attribs.class =
                       (domNode.attribs.class || " ") + "leading-normal mb-4";
